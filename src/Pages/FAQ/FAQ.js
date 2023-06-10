@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import useTitle from "../../Hook/useTitle";
 
-const Blog = () => {
+const FAQ = () => {
   const [status, setStatus] = useState(false);
   const [blogs, setBlogs] = useState([]);
-  useTitle("Blog");
+  useTitle("FAQ");
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -22,19 +22,19 @@ const Blog = () => {
   return (
     <>
       {status ? (
-        <section className="bg-[#F8FFDB] dark:text-gray-100">
+        <section className="bg-[#F8FFDB] text-black ">
           <div className="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
-            <h2 className="text-2xl font-semibold sm:text-4xl mb-5">
-              Question
+            <h2 className="text-2xl text-center font-bold sm:text-4xl mb-5">
+              FAQ
             </h2>
             <div className="space-y-4">
               {blogs.map((blog) => {
                 return (
                   <details key={blog._id} className="w-full border rounded-lg">
-                    <summary className="px-4 py-6 focus:outline-none focus-visible:ring-violet-400">
+                    <summary className="px-4 py-6 font-bold focus:outline-none focus-visible:ring-violet-400">
                       {blog.question}
                     </summary>
-                    <p className="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">
+                    <p className="px-4 py-6 pt-0 ml-4 -mt-4 text-gray-400">
                       {blog.answer}
                     </p>
                   </details>
@@ -52,4 +52,4 @@ const Blog = () => {
   );
 };
 
-export default Blog;
+export default FAQ;

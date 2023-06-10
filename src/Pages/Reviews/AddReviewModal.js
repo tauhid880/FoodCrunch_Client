@@ -111,7 +111,7 @@ const AddReviewModal = ({ services }) => {
                       </div>
                       <button
                         type="submit"
-                        className="btn mt-5 ml-2 bg-[#E32D6F] border-none"
+                        className="btn mt-5 ml-2 bg-gradient-to-r from-[#ee3fda] to-[#e99ea9] border-none"
                       >
                         Submit
                       </button>

@@ -4,14 +4,20 @@ const About = () => {
   return (
     <div className="text-gray-50 px-5 bg-[#F8FFDB]">
       <div className="grid grid-cols-12 mx-auto">
-        <div className="flex flex-col justify-center col-span-12 align-middle  lg:col-span-6 lg:h-auto">
+        <div
+          data-aos="fade-up-right"
+          className="flex flex-col justify-center col-span-12 align-middle  lg:col-span-6 lg:h-auto"
+        >
           <img
             src="https://images.unsplash.com/photo-1632911943189-bdcecf8b1fb5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
             alt=""
             className="w-full h-full"
           />
         </div>
-        <div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 divide-gray-700">
+        <div
+          data-aos="fade-up-left"
+          className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 divide-gray-700"
+        >
           <div className="pt-6 pb-4 space-y-2">
             <h1 className="text-4xl text-black lg:text-5xl mb-10 font-bold lg:leading-[60px]">
               Sit at Home <br></br>

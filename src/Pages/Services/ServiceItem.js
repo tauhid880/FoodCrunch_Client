@@ -45,7 +45,7 @@ const ServiceItem = ({ serviceItem }) => {
         <h3 className="text-xl font-semibold">${price}</h3>
         <button
           onClick={() => navigate(`/serviceDetails/${_id}`)}
-          className="bg-[#E32D6F] py-3 px-7 font-semibold flex rounded-full items-center mt-5 m-auto text-[15px hover:bg-black transition ease-in-out delay-150 duration-500 hover:text-white"
+          className="bg-gradient-to-r from-[#ee3fda] to-[#e99ea9] hover:from-[#d625c2] hover:to-[#f68394] py-3 px-7 font-semibold flex rounded-full items-center mt-5 m-auto text-[15px hover:bg-black transition ease-in-out delay-150 duration-500 hover:text-white"
         >
           View Details{" "}
           <FaArrowRight className="ml-2 text-[12px]"></FaArrowRight>

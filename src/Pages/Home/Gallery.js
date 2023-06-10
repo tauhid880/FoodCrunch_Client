@@ -7,7 +7,11 @@ const Gallery = () => {
     title: "Food Gallery",
   };
   return (
-    <section className="py-6 md:py-16 px-5 md:px-16 xl:px-28 bg-[#F8FFDB]">
+    <section
+      data-aos="zoom-in"
+      data-aos-duration="3000"
+      className="py-6 md:py-16 px-5 md:px-16 xl:px-28 bg-[#F8FFDB]"
+    >
       <Title content={content}></Title>
       <div className="container grid grid-cols-2 gap-4 p-4 mx-auto md:grid-cols-4">
         <img
